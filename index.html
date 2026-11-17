@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f8f4e8">
+  <meta name="description" content="250 soal OSN IPA SD, pembahasan bertahap, dan laboratorium sains dengan model visual yang menjelaskan proses IPA.">
+  <title>Klub Sains Kecil | Belajar IPA lewat Percobaan</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#beranda" aria-label="Beranda Klub Sains Kecil">
+      <span class="brand-icon" aria-hidden="true">✳</span><span><strong>Klub Sains Kecil</strong><small>LAB & LATIHAN IPA SD</small></span>
+    </a>
+    <p class="brand-desc">Coba. Amati. Pahami.</p>
+    <nav class="main-nav" aria-label="Menu utama">
+      <button type="button" class="nav-link active" data-page="home"><span>⌂</span>Beranda</button>
+      <button type="button" class="nav-link" data-page="questions"><span>✎</span>Latihan 250 soal</button>
+      <button type="button" class="nav-link" data-page="lab"><span>⚗</span>Laboratorium</button>
+      <button type="button" class="nav-link" data-page="concepts"><span>▤</span>Pojok materi</button>
+      <button type="button" class="nav-link" data-page="progress"><span>☆</span>Catatan belajarku</button>
+    </nav>
+    <div class="side-separator"></div>
+    <div class="aside-label">Pilih paket</div><div id="package-nav" class="package-nav"></div>
+    <div class="aside-label">Cari soal</div><label class="search-wrap"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Tulis kata kunci..." autocomplete="off"></label>
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+    <p class="side-note">Catatan jawaban tersimpan di perangkat dan browser ini. Semua percobaan bisa dibuka tanpa internet.</p>
+  </aside>
+  <main id="main" class="main">
+    <div class="mobile-top"><button type="button" id="menu-toggle" class="mobile-menu" aria-controls="sidebar" aria-expanded="false">☰ Menu</button><span>✳ Klub Sains Kecil</span></div>
+    <section id="page-home" class="page"></section>
+    <section id="page-questions" class="page hidden"></section>
+    <section id="page-lab" class="page hidden"></section>
+    <section id="page-concepts" class="page hidden"></section>
+    <section id="page-progress" class="page hidden"></section>
+    <footer class="site-footer">Klub Sains Kecil · Latihan OSN IPA SD, bukan soal resmi OSN · Model ideal dijelaskan bersama asumsi dan batasannya.</footer>
+  </main>
+</div>
+<script src="data.js"></script>
+<script src="models.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
